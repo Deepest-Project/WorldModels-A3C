@@ -15,13 +15,19 @@
 ## Training Result
 
 <b>Result with dataset using random rollout</b>
-![](/assets/scores.png)
+
+<!-- ![](/assets/scores.png) -->
+<p><img src="/assets/scores.png" width="400"></p>
 
 <b>Result with dataset using the pretrained model rollout</b>
-![](/assets/scores-additional.png)
+
+<p><img src="/assets/scores-additional.png" width="400"></p>
+<!-- ![](/assets/scores-additional.png) -->
 
 <b>Play Demo</b>
-![](/assets/a3c.gif)
+
+<p><img src="/assets/a3c.gif" width="400"></p>
+<!-- ![](/assets/a3c.gif) -->
 
 
 ---
