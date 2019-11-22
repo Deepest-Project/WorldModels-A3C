@@ -67,3 +67,8 @@
 ## Test
     # <# of plays> <seed> <is_record>
     python test.py 2 999 False
+
+
+## Reference
+- https://arxiv.org/abs/1803.10122
+- https://github.com/ctallec/world-models
