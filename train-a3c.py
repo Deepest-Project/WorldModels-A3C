@@ -336,11 +336,6 @@ lr = 1e-4
 global_agent = A3C(input_dims=state_dims, hidden_dims=hidden_dims, lr=lr).to(device)
 global_agent.share_memory()
 
-agent_path = sorted(glob.glob(os.path.join(hp.ckpt_dir, 'A3C-fine', '*.pth.tar')))[-1]
-agent_state = torch.load(agent_path, map_location={'cuda:0': str(device)})
-global_agent.load_state_dict(agent_state['agent'].state_dict())
-
-
 update_term = 100
 n_processes = 3
 processes = []

@@ -37,7 +37,6 @@
     apt-get install swig
     pip install gym[box2d]
 
-
 ## Training Stage I
 ### Dataset Generation using Rollout with random policy
     python rollout.py
@@ -56,12 +55,14 @@
 ### Rollout with the pretrained model
     python rollout-a3c.py
 
+### Fine-tuning V and M with new dataset
+    vi hparams.py
+        extra = True
 
-### Fine-tuning V and M
     python train-vae.py
     python train-rnn.py
 
-### Train C with the improved V and M
+### Train new C with the improved V and M
     python train-a3c.py
 
 ## Test
