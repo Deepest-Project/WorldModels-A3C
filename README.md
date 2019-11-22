@@ -5,8 +5,8 @@
 ![](/assets/world-models.png)
 
 ## Note
-- Replaced MDN-RNN to LSTM
-- Replaced CMA-ES to A3C
+- Replaced MDN-RNN to LSTM for Memory
+- Replaced CMA-ES to A3C for Controller
 - Trained over two stages
     - Stage 1: V and M were trained on dataset with random rollout
     - Stage 2: V and M were trained on dataset with a3c rollout
