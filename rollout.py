@@ -3,7 +3,7 @@ import os, sys, glob
 import gym
 from hparams import HyperParams as hp
 
-def rollout(agent):
+def rollout():
     env = gym.make("CarRacing-v0")
 
     seq_len = 1000
@@ -53,6 +53,5 @@ def rollout(agent):
         
 
 if __name__ == '__main__':
-    agent = sys.argv[1] # random or pretrained
     np.random.seed(hp.seed)
-    rollout(agent)
+    rollout()
